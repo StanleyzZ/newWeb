@@ -1,0 +1,108 @@
+@charset "utf-8";
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div{margin:0;padding:0;border:0;}
+body{background:#fff;color:#333;font-size:12px; font-family:"SimSun","宋体","Arial Narrow";}
+ 
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+*{margin 0; padding:0;}
+ 
+a{text-decoration:none;}
+a:link{color:#009;}
+a:visited{color:#800080;}
+a:hover,a:active,a:focus{color:#c00;text-decoration:underline;}
+
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-table; }
+*html .clearfix { height: 1%; }
+.clearfix { display: block; }
+*+html .clearfix { min-height: 1%; }
+
+/*开场图开始*/
+.topbg{ width:100%; height:100%; overflow: hidden;}
+.top-img img{width:100%; height:100%}
+.down01{ position:absolute; left:50%; margin:0 0 0 -19px; bottom:10%; cursor:pointer;}
+
+/*导航开始*/
+.nav-bg{ width:100%; height:80px; background:#000; position:fixed; z-index:999; top:0; border-bottom:1px #999 solid;}
+.nav-box{ width: 1000px; height:80px; margin:0 auto; }
+.logo{ height:80px; width:206px; float:left;}
+.nav{ height:80px; width:600px;float:right; }
+.nav li{ float:left; width:100px; height:43px; text-align:center; padding-top:32px; color:#fff; font-size:18px; margin: 0 0 0 20px; cursor:pointer;}
+.nav .current{ border-bottom:5px solid #6FF; text-shadow:#fff;}
+
+/*轮播图开始*/
+.banner-bg{ width:100%; height:800px; overflow:hidden; position:relative;}
+.banner-bg ul li{ position:absolute; display:none; left:50%;}
+.pic01{ position:absolute; left:50%; top:225px; margin:0 0 0 -227px;}
+.pic02{ position:absolute; left:50%; top:225px; margin:0 0 0 -387px;}
+.leftBtn,.rightBtn { width: 41px; height: 69px; position:absolute; top: 50%; margin: -35px 0 0 0; background:url(../images/arr.png) no-repeat; display: none; }
+.leftBtn { background-position:-83px 0; left: 0; }
+.rightBtn { background-position: -125px 0; right: 0; }
+.leftBtn:hover { background-position:0 0; }
+.rightBtn:hover { background-position:-41px 0;}
+
+/*装饰栏开始*/
+.part01{ width: 100%; height:300px; background: #000; position:relative;}
+.part01 p{ color:#fff; font-size:24px; position:absolute; left:40%; top:50%; font-family:'新蒂下午茶基本版';}
+
+/*技能栏开始*/
+.Skill{ width:100%; height:auto;}
+.Skill-in{ width:1000px; margin:0 auto; padding:20px 0 0 0;}
+.Skill-in h2{ text-align:center; margin:0 0 20px 0; font-size:24px;}
+.Skill-in ul{ width:1000px; overflow:hidden;}
+.Skill-in ul li{ width:300px; height:auto; float:left; margin:0 0 0 50px;}
+.Skill-in ul li dl{width:300px; height:auto; text-align:center; font-family:'微软雅黑'; position:relative; padding: 196px 0 0 0; }
+.Skill-in ul li dl img{ position:absolute; top:0; left:50%; margin:0 0 0 -92px;}
+.Skill-in ul li dl dt{ width:300px;text-align:center; font-size:24px; margin:20px 0 0 0; color:#666; }
+.Skill-in ul li dl dd{ text-align:center; margin:12px 0 0 0; font-size:16px; line-height:22px; color:#999;}
+.Skill-in .skill-icon{ width:1000px; overflow:hidden; margin:20px 0 20px 0;}
+.Skill-in .skill-icon li{ width:150px; height:150px; margin:25px 0 20px 62px; float:left; position:relative;}
+.Skill-in .skill-icon li img{ position:absolute; transition: all 1s; backface-visibility:hidden;  left: 0; top: 0;}
+.Skill-in .skill-icon li:hover .ZM{ transform:rotateY(540deg); }
+.FM{ transform:rotateY(-540deg); }
+.Skill-in .skill-icon li:hover .FM{ transform:rotateY(0deg); }
+
+
+/*案例栏开始*/
+.Cases{  width:100%; height:auto; overflow:hidden; padding:20px 0 30px 0; background:url(../images/CasesBg.jpg) center center;}
+.Cases h2{ text-align:center; margin:0 0 20px 0; font-size:24px;}
+.btn01{ text-align:center; margin-left:198px;}
+.baozha{width: 970px; height: 410px; margin: 20px auto; position: relative; -webkit-perspective:500px;}
+.baozha .maoni p{width: 194px; height: 82px; background-color: pink; position: absolute; font-size: 40px; background:url(../images/0.jpg) no-repeat; transition:all 1s ease 0s;}
+.baozha.fei .maoni p{opacity: 0;}
+.Cases h3{ margin:50px 0; font-size:22px; text-align:center;  }
+.Cases .stage{width: 1000px; height: 163px; margin: 20px auto; border: 1px solid red; position: relative; overflow: hidden;}
+.Cases .stage ul{position: absolute; top: 0; left: 0; list-style: none; width: 4000px; background:#000; }
+.Cases .stage ul li{float: left; width: 250px; height: 163px; margin-right: 10px;}
+.appbox{ width:1000px; height:420px; margin:0 auto; overflow:hidden;}
+#jswbox{width:883px;height:420px; margin:0 auto;position:relative;}
+#jswbox ul{position:relative; height:600px;}
+#jswbox li{position:absolute;width:0;height:0;z-index:0;cursor:pointer;overflow:hidden;top:152px;left:10px;}
+#jswbox li img{width:100%;height:100%;vertical-align:top;float:left;}
+#jswbox .prev, #jswbox .next{display:none;}
+
+/*关于栏开始*/
+.About{width:100%; height:auto; background:url(../images/aboutbg.jpg) no-repeat center center;}
+.About-in { width:1000px; margin:0 auto; padding:20px 0 0 0; overflow:hidden; position:relative;}
+.About-in h2{text-align:center; margin:0 0 20px 0; font-size:24px; color:#fff;}
+.About-in .in1{ width:400px; height:400px; display:inline-block;float:left; background:url(../images/jianjie.png) no-repeat left bottom;}
+.in1 p{ position:absolute; left:20px; bottom:190px; display:block; width:170px; height:180px; color:#ccc; line-height:22px; font-size:16px; font-family:'微软雅黑'; }
+.About-in .in2{ width:400px; height:200px; display:inline-block; float:left;}
+.About-in .in3{ width:400px; height:400px; display:inline-block;float:left;}
+.About-in .box01{ display:inline-block; width:200px; height:200px; float:left;}
+.About-in .box02{ display:inline-block; width:200px; height:400px;}
+.About-in .box03{ display:inline-block; width:200px; height:200px; margin:200px 0 0 0; float:left;}
+
+/*联系栏开始*/
+.footer-bg{ width:100%; height:auto; position:relative;}
+.footer-bg img{ position:absolute; z-index:3; top:0; left:50%; margin:0 0 0 -349px;}
+.footer-top{ height:490px; background:#000;}
+.footer-bottom{ height:220px; background:url(../images/border_top.png) no-repeat top center;}
+.Contact{  width:100%; height:auto; overflow:hidden;}
+.Contact-in { width:1000px; margin:0 auto; padding:20px 0 0 0; overflow:hidden;}
+.Contact-in h2{ text-align:center; margin:0 0 20px 0; font-size:24px;}
+.Contact-in dl{ width:300px; height:auto; margin:50px 0 50px 50px; float:left;}
+.Contact-in dl dt{ width:300px; height:130px; text-align:center;}
+.Contact-in dl dd{ margin:30px 0 0 0; text-align:center; font-family:'微软雅黑'; font-size:18px;}
+
+.foot-bottom{ width:100%; height:80px; background:#000;}

@@ -1,0 +1,148 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:url(../images/chains.png) repeat right top #f1f1f1;
+	font-size:11px;
+	font-family:Merriweather, serif;
+	min-height:100%;
+	height:auto!important;
+	overflow:hidden;
+	height:100%
+}
+html, body {
+	width:100%;
+	min-width:1000px
+}
+.lanrenzhijia {
+	position:relative;
+	margin:0 auto;
+}
+.nivo-caption span {
+	font-family:'PT Sans Narrow', sans-serif;
+	font-size:20px
+}
+::selection {
+ background:#d7efff
+}
+
+::-moz-selection {
+ background:#d7efff
+}
+.nivo-caption, .proj-img i {
+	background-color:#34739f
+}
+.lanrenzhijia2 img {
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.lanrenzhijia2 {
+	overflow:hidden;
+	position:relative
+}
+#slider, .lanrenzhijia2 img {
+	width:940px
+}
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.nivo-caption {
+	height:46px;
+	position:absolute;
+	right:0;
+	bottom:0;
+	overflow:hidden;
+	font-size:14px;
+	z-index:8
+}
+.nivo-caption p {
+	margin:0;
+}
+.nivo-caption span {
+	float:left;
+	padding:0 50px 0 20px;
+	color:#fff;
+	line-height:46px;
+}
+.nivo-caption a {
+	display:block;
+	float:right;
+	width:78px;
+	height:46px;
+	background:url(../images/caption-link.png) no-repeat left 50%;
+}
+.nivo-html-caption {
+	display:none
+}
+.nivo-directionNav {
+	position:absolute;
+	background:#fff;
+	bottom:46px;
+	right:0;
+	overflow:hidden;
+	z-index:9;
+	width:78px;
+}
+.nivo-prevNav, .nivo-nextNav {
+	text-indent:9999px;
+	float:left;
+	width:39px;
+	height:39px;
+	cursor:pointer
+}
+.nivo-prevNav {
+	background:url(../images/slider-arrows.png) no-repeat left top;
+}
+.nivo-nextNav {
+	background:url(../images/slider-arrows.png) no-repeat right top;
+}
+.nivo-prevNav:hover {
+	background-position: left bottom
+}
+.nivo-nextNav:hover {
+	background-position: right bottom
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+.nivo-controlNav {
+	position:absolute;
+	overflow:hidden;
+	z-index:20;
+	height:8px;
+	left:20px;
+	bottom:22px
+}
+.nivo-controlNav a {
+	line-height:10em;
+	display:inline-block;
+	margin:0 11px 0 0;
+	width:8px;
+	height:8px;
+	background:url(../images/nivo-controls.png) no-repeat left top;
+	cursor:pointer
+}
+.nivo-controlNav a.active {
+	background:url(../images/nivo-controls.png) no-repeat right top
+}
+#preloader {
+	position:relative;
+	z-index:51;
+	background:url(../images/loading.gif) no-repeat 50% 50%;
+	width:940px;
+	height:80px;
+	border-top:1px #dedede solid;
+	border-bottom:1px #dedede solid
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
